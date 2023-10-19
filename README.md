@@ -1,12 +1,15 @@
-# klipper-backup 💾
-Klipper backup script for manual or automated GitHub backups
+# 3d Printer
+### Backup of my 3d printing files
 
-This is a backup script to create manual or automated klipper backups in a github repository. You can [see an example](https://github.com/Staubgeborener/3dprint) of what it looks like in the end.
+I use the script `backup_script.sh` to automatically upload my Klipper files as a backup. If someone wants to use this:
 
-## RTFM
-I would suggest reading the [wiki](https://github.com/Staubgeborener/klipper-backup/wiki), as this provides detailed step-by-step instructions.
+[Source code and workflow: "klipper-backup"](https://github.com/Staubgeborener/klipper-backup)
 
-## YouTube
-The user [Minimal 3DP](https://github.com/minimal3dp) has created a video about the initial setup and use of klipper-backup and made it available on YouTube. This and the wiki should explain many questions in advance.
-
-[![The Ultimate Guide to Using Klipper Macros to Backup Your Configuration Files](https://img.youtube.com/vi/fR2jIegqv3A/0.jpg)](https://www.youtube.com/watch?v=fR2jIegqv3A "The Ultimate Guide to Using Klipper Macros to Backup Your Configuration Files")
+### Setup
+* Printer: V Core 3
+* Firmware: [RatOS](https://os.ratrig.com/) running [Klipper](https://www.klipper3d.org/) (Running on BIGTREETECH CB1 V2.2)
+* Interface: [Mainsail](https://docs.mainsail.xyz/)
+* Mainboard: [BIGTREETECH Manta M8P V1.0](https://bigtree-tech.com)
+* Extruder: Direct Drive ([Mosquito Liquid]([https://www.thingiverse.com/thing:4062242](https://www.sliceengineering.com/products/mosquito-liquid)))
+* Probe: [Euclid](https://euclidprobe.github.io/)
+* Slicer of choice: [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424), [SuperSlicer](https://github.com/supermerill/SuperSlicer) 
