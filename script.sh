@@ -24,11 +24,11 @@ while read -r path; do
 done < <(grep 'path_' "$parent_path"/.env | sed 's/^.*=//')
 
 # Git commands
-git init
-git filter-branch --force --index-filter \
-  'git rm -r --cached --ignore-unmatch "$parent_path"/.env' \
-  --prune-empty --tag-name-filter cat -- --all
-#git rm -rf --cached "$parent_path"/.env
+# git init
+# git filter-branch --force --index-filter \
+#  'git rm -r --cached --ignore-unmatch "$parent_path"/.env' \
+#  --prune-empty --tag-name-filter cat -- --all
+# git rm -rf --cached "$parent_path"/.env
 git add "$parent_path"
-git commit -m "New backup from $(date +"%d-%m-%y")"
+git commit -m "New backup from $(date +"%m-%d-%y")"
 git push https://"$github_token"@github.com/"$github_username"/"$github_repository".git
